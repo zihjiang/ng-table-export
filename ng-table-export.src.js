@@ -31,7 +31,7 @@ angular.module('ngTableExport', [])
                         }
                         if (i != 1) {
                             angular.forEach(tds, function(td, i) {
-                                rowData += csv.stringify(angular.element(td).text()) + ';';
+                                rowData += csv.stringify(angular.element(td).text()) + ',';
                             });
                             rowData = rowData.slice(0, rowData.length - 1); //remove last semicolon
                         }
